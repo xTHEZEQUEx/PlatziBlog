@@ -75,13 +75,29 @@
                     git reflog muestra absolutamente TODOS los cambios hechos, TODOS por ende muestra todos los commits y demás. Luego se utiliza git reset --hard/soft #COMMIT  y todo vuelve a cómo estaba en ese commit
                 </li>
                 <li>
-                    Vamos a usar git amend. Ya ahorita añado información
+                    Vamos a usar git amend. Ya ahorita añado información. Básicamente cuando uno hace un cambio luego commit pero resulta que hizo falta un cambio, entonces realiza el cambio y luego ammend, sencillo
                 </li>
+                <li>
+                    git grep muestra en dónde se utilizó cierta cosa. git prep -n muestra las líneas en las que se utilizó cierta cosa. git prep -c cuenta las veces que una cosa se repite.<br>
+                    git log -S "palabraabuscar" muestra las veces que se utilizó una cosa específica en los commits
+                </li>
+                <li>
+                    git shortlog muestra los commits que ha hecho cada persona<br>
+                    git shortlog -sn --all muestra los commits que ha hecho cada persona incluso aquellos que fueron borrados <br>
+                    git shortlog -sn --all --no-merges muestra los commits que ha hecho cada persona sin incluir los merges<br>
+                    To create shortcuts se usa git config --global alias.nombrealias "comando que se quiere colocar alias"<br>
+                    git blame muestra quién tuvo la culpa de qué<br>
+                    git blame nombrearchivo -Llineainicial,lineafinal este sirve para ver quién hizo qué cambios de esa linea a esa otra<br>
+                    git branch -r muestra las ramas remotas, o sea las que están en github
+                    git branch -a muestra todas las ramas, remotas y locales
+
+                </li>
+                
             </ul>
             <p><img src="https://i.imgur.com/MVru2dS.jpg" width="100%"></p>
         </div>
         <div id="footer">
-            Este es el footer, pedazo de basura andante con cuatro ojos
+            Este es el footer, pedazo de basura andante con cuatro ojos<br>
             ESTO ES UNA PRUEBA DE LOCAL CON GITHUB Y XAMPP
         </div>
     </div>
